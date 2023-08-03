@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>jinja operational tags</h1>
+{% if 'a' > 'b' and 'a' > 'c' %}
+    <h1>a is highest{{'a'}}</h1>
+    {% elif 'b' > 'c' and 'b' > 'a' %}
+    <h1>b is highest{{'b'}}</h1>
+    {% else %}
+    <h1>c is highest{{'c'}}</h1>
+{% endif %}
+<a href="{% url 'forloop' %}">Click here to go forloop</a>
+
+</body>
+</html>
